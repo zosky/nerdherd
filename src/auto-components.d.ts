@@ -8,9 +8,23 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ButtonRepo: typeof import('./components/ButtonRepo.vue')['default']
+    ChatLog: typeof import('./components/ChatLog.vue')['default']
+    Elements: typeof import('./components/Elements.vue')['default']
+    ElementsSvg: typeof import('./components/icons/ElementsSvg.vue')['default']
+    EntryCount: typeof import('./components/EntryCount.vue')['default']
+    Fishing: typeof import('./components/fishing.vue')['default']
+    FishingLeader: typeof import('./components/FishingLeader.vue')['default']
+    GameCard: typeof import('./components/GameCard.vue')['default']
+    NerdHerdSvg: typeof import('./components/icons/NerdHerdSvg.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StoreLists: typeof import('./components/StoreLists.vue')['default']
+    SvgPie: typeof import('./components/SvgPie.vue')['default']
     Tailwind: typeof import('mdue')['Tailwind']
+    UserIsMe: typeof import('./components/UserIsMe.vue')['default']
+    UserSearch: typeof import('./components/UserSearch.vue')['default']
+    UserStats: typeof import('./components/UserStats.vue')['default']
     Vuejs: typeof import('mdue')['Vuejs']
+    WatchTime: typeof import('./components/WatchTime.vue')['default']
   }
 }

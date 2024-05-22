@@ -1,21 +1,26 @@
 <script setup>
+import dayjs from 'dayjs'
+import duration from 'dayjs/plugin/duration'
+dayjs.extend(duration)
 let counter = ref(0)
-
-setInterval(() => {
-  counter.value++
-}, 1000)
+setInterval(() => { counter.value++ }, 1000)
 </script>
 
 <template>
   <div>
-    <header v-if="$route.meta.title" class="bg-white shadow">
-      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+    <header v-if="$route.meta.title" class="bg-teal-900 bg-opacity-25 shadow">
+      <div class="flex flex-row items-center justify-between px-2 gap-3 " >
         <h1
-          class="text-3xl font-bold leading-tight text-gray-900"
-          title="click to reset a counter"
-          @click="counter = 0">
-          {{ $route.meta.title }} / {{ counter }}
+          class="text-3xl font-bold leading-tight items-center flex flex-row gap-2"
+          :title="`now running for ${counter} seconds`">
+          <a href="https://www.twitch.tv/staggerrilla" target="twitch">
+            <NerdHerdSvg class="inline w-12 h-12 -mb-6 -mt-4 -rotate-12 hover:animate-pulse" />
+          </a>
+          <div class="d" v-text="`${ dayjs.duration(counter,'seconds').format('HH:mm:ss').replace(/^([0:]*)/,'')  }`" />
         </h1>
+        <div>
+          <UserIsMe />
+        </div>
       </div>
     </header>
     <main>
@@ -23,3 +28,8 @@ setInterval(() => {
     </main>
   </div>
 </template>
+
+<style scoped>
+  .d:before { content:'started'; @apply italic font-light text-xl }
+  .d:after { content:'ago'; @apply italic font-light text-xl }
+</style>
