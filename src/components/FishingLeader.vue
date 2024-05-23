@@ -30,15 +30,6 @@ const catchLeader = computed(()=>{
     .sort((a,b)=>a.catch>b.catch?-1:1)
   return e 
 })
-const stats = computed(()=> 
-  Object.entries(liveLog?.fish??{})?.map(u=>u={ 
-    user:u[0],
-    entries:u[1]?.length,
-    wins: Object.keys(liveLog?.fishing[u[0]])?.length,
-    score: Object.values(liveLog?.fishing[u[0]])?.at(-1).total
-  })
-    .sort((a,b)=>a.score>b.score?-1:1)
-)
 </script>
 
 <template>

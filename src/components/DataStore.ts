@@ -1,6 +1,40 @@
+interface elGame { 
+  bot: { identifier: string; sendResponse: boolean; }
+  cooldown: { user: number; global: number; category: number }
+  quantity: { current: number; total: number }
+  alert: { 
+    graphics: { duration: number; type: string; src: string }
+    audio: { src: string; volume: number }
+    enabled: boolean
+  }
+  id: string,
+  img: string,
+  _id: string,
+  subscriberOnly: boolean,
+  sources: string[],
+  userInput: string[],
+  order: number,
+  enabled: boolean,
+  featured: boolean,
+  name: string,
+  description: string,
+  type: string,
+  cost: number,
+  allowMessages: boolean,
+  categoryName: string,
+  thumbnail: string,
+  public: boolean,
+  channel: string,
+  createdAt: string,
+  updatedAt: string,
+  created: string,
+  updated: string,
+  sub: boolean,
+  qty: number
+}
 
 const getters = { 
-  saveValue: (key:string,value:any) =>{ localStorage.setItem(key, value) },
+  saveValue: (key:string,value:string) =>{ localStorage.setItem(key, value) },
   getValue: async (key:string) => { return localStorage.getItem(key) },
   getJSON: async (jsonFile:string) => 
     fetch(`/${jsonFile}.json`)

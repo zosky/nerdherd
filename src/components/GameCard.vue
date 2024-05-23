@@ -1,7 +1,7 @@
 <script setup>
 import { Lock, MicrosoftXbox, Steam } from 'mdue'
 const { steamSearch, steamImg, steamLinkId } = inject('$getters')
-const props = defineProps({
+defineProps({
   game:{type:Object,default:()=>{return{}}},
   mybubs: {type:Number,default:42},
 })

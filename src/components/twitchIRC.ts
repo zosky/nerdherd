@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import tmi from 'tmi.js'
 import { getters } from './DataStore'
 // import dayjs from 'dayjs'
@@ -32,11 +33,11 @@ function onMessageHandler (target:any, context:any, msg:string) {
   const isBloop = msg.match(/.*!bloop.*/i)?.length == 1
   const isBleep = msg.match(/^!bleep/i)?.length == 1
   const isFish = msg.match(/^!fish/i)?.length == 1
-  const isFishing = isStagger && msg?.match(/@(\w+).* (\w+) [⭐]+ (.*) weighing (.*)kg worth (.*) gold!.*now have (.*) gold/)
+  const isFishing = msg?.match(/@(\w+).* (\w+) [⭐]+ (.*) weighing (.*)kg worth (.*) gold!.*now have (.*) gold/)
   const isFishReset = isStagger && msg.includes('!resetleaderboard')
-  const isBubs = isStagger && msg.match(/^.addbubbers (\w+) (.*)/)
+  const isBubs = msg.match(/^.addbubbers (\w+) (.*)/)
   const isBleepStart = user == 'bleepbloopinbot' && msg == '!raffle'
-  const isBleepEnd = user == 'streamelements' && msg.match(/Raffle has ended and ([\w+, ]*) won (\d+) Bubs/)
+  const isBleepEnd = msg.match(/Raffle has ended and ([\w+, ]*) won (\d+) Bubs/)
   const isIgnored = [
     ['staggerrilla', /^b$/ ],
     ['bleepbloopinbot',/^.raffle$/ ], // !bloop start
@@ -50,20 +51,20 @@ function onMessageHandler (target:any, context:any, msg:string) {
   ].some(f=> user==f[0] && msg.match(f[1])?.[0] )
 
   // "oneLiner" to init user in ea. miniGame like bloop: { user: [time1, time2....]}
-  const saveEntry = (x,y,z) => { if (!liveLog[x]?.[y]) liveLog[x][y] = [z] ; else liveLog[x][y].push(z) }
+  const saveEntry = (x:string,y:string,z:number) => { if (!liveLog[x]?.[y]) liveLog[x][y] = [z] ; else liveLog[x][y].push(z) }
   if(isBub) saveEntry('bub',user,time)
   if(isBloop) saveEntry('bloop',user,time)
   if(isBleep) saveEntry('bleep',user,time)
   if(isFish) saveEntry('fish',user,time)
   if(isFishReset) liveLog.fishing = {} // fish reset
-  if(isBleepEnd?.length){
+  if(user == 'streamelements' && isBleepEnd?.length){
     const what = parseInt(isBleepEnd?.[2],10)
-    isBleepEnd?.[1]?.split(', ')?.forEach(who => {
+    isBleepEnd?.[1]?.split(', ')?.forEach((who:string) => {
       if(!liveLog?.bubs?.[who]) liveLog.bubs[who] = {}
       liveLog.bubs[who][time] = what
     })
   }
-  if (isFishing?.length) { 
+  if (isStagger && isFishing?.length) { 
     const [all,fisher,type,thing,weight,worth,total] = isFishing 
     if(!liveLog.fishing?.[fisher]) liveLog.fishing[fisher] = {}
     liveLog.fishing[fisher][time] = { 
@@ -73,7 +74,7 @@ function onMessageHandler (target:any, context:any, msg:string) {
       total: parseInt(total,10) 
     }
   }
-  if (isBubs?.length){
+  if (isStagger && isBubs?.length){
     const who = isBubs[1]
     const what = parseInt( isBubs[2]?.toLowerCase()?.replace('k','000'), 10 )
     if(!liveLog?.bubs?.[who]) liveLog.bubs[who] = {}
