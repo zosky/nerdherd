@@ -2,14 +2,14 @@
 import { Steam, MicrosoftXbox, LockOutline } from 'mdue'
 const dataStore = inject('$dataStore')
 const { elementsLS, getValue, saveValue } = inject('$getters')
-elementsLS()
+elementsLS().then(r => { dataStore.games = r })
 const isOpen = ref({steam:false,steamSub:false,xbox:false,xboxSub:false,others:true})
 const showBlade = ref({steam:true,steamSub:true,xbox:true,xboxSub:true,others:true})
 // reInit enabled/disabled blades
 for (const x of Object.keys(showBlade.value)) { getValue(`view${x}`).then(r=>{ showBlade.value[x] = r=='false' ? false : true }) }
 const stats = computed(()=>{
   // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-  const g = dataStore?.games?.sort((a,b)=>a.cost>b.cost?1:-1)
+  const g = dataStore?.games
   const xbox = g?.filter(gg=>gg.xbox && !gg.sub)
   const xboxSub = g?.filter(gg=>gg.xbox && gg.sub)
   const steam = g?.filter(gg=>gg.steam && !gg.sub)
@@ -25,8 +25,10 @@ const toggleBlade = k => {
 
 <template>
   <div>
-    <label class="px-2 opacity-50 italic text-xs"  v-text="`have fun redeeming bubs for cool games @ elements & also plz remember to say TY :)`" />
-    <div class="flex flex-row items-center gap-2 px-2">
+    <div class="flex flex-row items-center gap-2 px-2 bg-green-950">
+      <a href="https://streamelements.com/staggerrilla/store">
+        <ElementsSvg class="w-8 h-8" />
+      </a>
       <h3 
         v-for="s,k of stats" :key="k"
         class="flex flex-row items-center gap-1"
@@ -43,6 +45,8 @@ const toggleBlade = k => {
         {{ s?.length }}
       </h3>
     </div>
+    <label class="w-full px-2 opacity-50 italic text-xs" v-text="'click ^ to hide (or show) sections of what stagger has in the store (open below)'"/>
+    <label class="w-full opacity-50 italic text-xs"  v-text="`have fun redeeming bubs for cool games & remember to say TY`" />
     <section>
       <details
         v-for="s,k of stats" :key=k

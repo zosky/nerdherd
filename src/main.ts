@@ -4,7 +4,7 @@ import App from './App.vue'
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { createHead } from '@vueuse/head'
 import { getters, dataStorage, methods } from './components/DataStore'
-import { liveLog, liveEntries, liveRedeem } from './components/twitchIRC'
+import { liveLog } from './components/twitchIRC'
 
 const app = createApp(App)
 const head = createHead()
@@ -19,6 +19,4 @@ app.provide('$getters', getters) // pump in dataStore chunks
 app.provide('$dataStore', dataStorage)
 app.provide('$methods', methods)
 app.provide('$liveLog', liveLog)
-app.provide('$liveEntries', liveEntries)
-app.provide('$liveRedeem', liveRedeem)
 app.mount(document.body)

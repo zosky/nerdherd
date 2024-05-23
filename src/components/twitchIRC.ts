@@ -5,15 +5,11 @@ import { getters } from './DataStore'
 // import advancedFormat from 'dayjs/plugin/advancedFormat'
 // dayjs.extend(advancedFormat)
 
+const clientStatus = reactive({ connected:false })
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const liveLog: Record<string,any> = reactive({
   bleep:{},bloop:{},bub:{},fish:{},fishing:{},bubs:{},raw:[]
 })
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const liveEntries: Record<string,any> = reactive({})
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const liveRedeem: Record<string,any> = reactive([])
-const clientStatus = reactive({ connected:false })
 
 // Register our connect handlers
 function onConnectedHandler (addr='twitch', port=1337) {
@@ -91,4 +87,4 @@ client.on('message', onMessageHandler)
 client.on('connected', onConnectedHandler)
 client.connect()
 
-export { liveLog, liveEntries, liveRedeem }
+export { liveLog }
