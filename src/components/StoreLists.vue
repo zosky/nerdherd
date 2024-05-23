@@ -8,6 +8,7 @@ const showBlade = ref({steam:true,steamSub:true,xbox:true,xboxSub:true,others:tr
 // reInit enabled/disabled blades
 for (const x of Object.keys(showBlade.value)) { getValue(`view${x}`).then(r=>{ showBlade.value[x] = r=='false' ? false : true }) }
 const stats = computed(()=>{
+  // eslint-disable-next-line vue/no-side-effects-in-computed-properties
   const g = dataStore?.games?.sort((a,b)=>a.cost>b.cost?1:-1)
   const xbox = g?.filter(gg=>gg.xbox && !gg.sub)
   const xboxSub = g?.filter(gg=>gg.xbox && gg.sub)

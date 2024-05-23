@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
-    "allowJs": true
+    "allowJs": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue"    
   },
   "exclude": ["node_modules", "dist"],
   "include": [

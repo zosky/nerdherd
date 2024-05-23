@@ -5,6 +5,7 @@ dayjs.extend(advancedFormat)
 const showSlice = ref(60)
 const showCmds = ref(true)
 const liveLog = inject('$liveLog')
+// eslint-disable-next-line vue/no-side-effects-in-computed-properties
 const chat = computed(()=> liveLog?.raw?.sort((a,b)=> a.time > b.time ? -1 : 1))
 </script>
 
