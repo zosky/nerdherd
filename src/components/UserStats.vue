@@ -1,6 +1,7 @@
 <script setup>
 import dayjs from 'dayjs'
 import duration from 'dayjs/plugin/duration'
+import staggerPng from './images/stagger.png'
 dayjs.extend(duration)
 const dataStore = inject('$dataStore')
 const { elementsUser } = inject('$getters')
@@ -22,7 +23,9 @@ elementsUser(props.user)
 
 <template>
   <section>
-    <div class="uName">{{ user }}
+    <div class="uName">
+      <img v-if="user=='staggerrilla'" :src="staggerPng" class="inline h-7 -mb-0.5" />
+      <span v-else v-text="user"/>
       <button class="opacity-10 hover:opacity-100 hover:animate-spin" title="remove" @click="doUser(user)">X</button>
     </div>
     <div class="uData" >

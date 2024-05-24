@@ -1,5 +1,6 @@
 <script setup>
 import { StarFace } from 'mdue'
+import staggerPng from './images/stagger.png'
 const dataStore = inject('$dataStore')
 const liveLog = inject('$liveLog')
 const sliceMax = ref(5)
@@ -44,7 +45,8 @@ const catchLeader = computed(()=>{
         @click="doUser(p.user)">
         <div class="name">
           <StarFace v-if="isIncluded(p.user)" />
-          {{p.user}}
+          <img v-if="p.user=='staggerrilla'" :src="staggerPng" class="inline h-6 -mb-0.5" />
+          <span v-else v-text="p.user" />
         </div>
         <div class="num" v-text="p.score" />
       </li>
@@ -70,7 +72,8 @@ const catchLeader = computed(()=>{
         @click="doUser(p.user)">
         <div class="name">
           <StarFace v-if="isIncluded(p.user)" />
-          {{p.user}}
+          <img v-if="p.user=='staggerrilla'" :src="staggerPng" class="inline h-6 -mb-0.5" />
+          <span v-else v-text="p.user" />
         </div>
         <div class="num" v-text="p.catch" />
       </li>

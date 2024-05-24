@@ -1,5 +1,6 @@
 <script setup>
 import { StarFace } from 'mdue'
+import staggerPng from './images/stagger.png'
 const props = defineProps({what:{type:String,default:'bloop'}})
 const dataStore = inject('$dataStore')
 const liveLog = inject('$liveLog')
@@ -39,7 +40,8 @@ const doUser = u => {
       @click="doUser(u.user)">
       <div class="u">
         <StarFace v-if="isIncluded(u.user)" />
-        {{u.user}}
+        <img v-if="u.user=='staggerrilla'" :src="staggerPng" class="inline h-6 -mb-0.5" />
+        <span v-else v-text="u.user" />
       </div>
       <div v-if="what!='bubs'" class="n" v-text="u.entries" />
       <div v-else class="flex flex-row">
