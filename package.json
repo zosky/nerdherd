@@ -7,7 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "@vueuse/head": "^0.7.9",
+    "@vueuse/head": "^2.0.0",
     "dayjs": "^1.11.11",
     "html-to-image": "^1.11.11",
     "tmi.js": "^1.8.5",
