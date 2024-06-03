@@ -18,6 +18,8 @@ setInterval(() => { counter.value++ }, 1000)
             <!-- <NerdHerdSvg class="inline w-12 h-12 -mb-6 -mt-4 -rotate-12 hover:animate-pulse" /> -->
             <img :src="imageUrl" class="w-16 h-16 -mb-6 -mt-2 -rotate-12 hover:animate-pulse hover:scale-150 origin-top-left transition-all" />
           </a>
+          <router-link title="homePage" to="/">🏠</router-link>
+          <router-link title="fishingStats" to="/fishing">🎣</router-link>
           <div class="d" v-text="`${ dayjs.duration(counter,'seconds').format('HH:mm:ss').replace(/^([0:]*)/,'')  }`" />
         </h1>
         <div>
