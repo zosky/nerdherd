@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BleepScoreBoardOverlayTemplateSvg: typeof import('./components/icons/BleepScoreBoardOverlayTemplateSvg.vue')['default']
     ButtonRepo: typeof import('./components/ButtonRepo.vue')['default']
     ChatLog: typeof import('./components/ChatLog.vue')['default']
     ElementsSvg: typeof import('./components/icons/ElementsSvg.vue')['default']
