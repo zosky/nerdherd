@@ -40,7 +40,8 @@ const uniqueValues = computed(()=>{
   return newD
 })
 
-fetch('/logs/fishing.csv').then(r=>r.text())
+const csvUrl = (import.meta.env.PROD ? '/nerdherd':'') + '/logs/fishing.csv' // prodShim hack
+fetch(csvUrl).then(r=>r.text())
   .then(r=> { // parse txt data
     r = r.split('\n').filter(n=>n.length).map(r=>r.split(','))
     const [keys,theD] = [ r[0], r.slice(1) ]
