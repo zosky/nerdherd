@@ -51,7 +51,7 @@ const getters = {
     const JSONheader = { headers: { accept: 'application/json, text/plain, */*'}}
     return await fetch(elementsAPI, JSONheader)
       .then( r => r.json() )
-      .then( r => r.filter((g:elGame)=> all ? g.enabled : true) ) // only "on")
+      .then( r => r.filter((g:elGame)=> all ? true : g.enabled ) ) // only "on")
       .then( r => r.sort((a:elGame,b:elGame)=>a.cost<b.cost?-1:1) )
       .then( r => r.map((g:elGame)=>{ 
         const id = g._id
