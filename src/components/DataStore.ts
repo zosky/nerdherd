@@ -46,18 +46,19 @@ const getters = {
   steamSearch: (t:string) => `https://store.steampowered.com/search/?term=${encodeURIComponent(t)}`,
   steamImg: (id:number) => `https://cdn.akamai.steamstatic.com/steam/apps/${id}/header.jpg`,    
   steamLinkId: (id:number) => `https://store.steampowered.com/app/${id}/`,
-  elementsLS: async (id='5dd84a6e7e7e3777cf657423') => { 
+  elementsLS: async (id='5dd84a6e7e7e3777cf657423', all=false) => { 
     const elementsAPI = `https://api.streamelements.com/kappa/v2/store/${id}/items?source=website`
     const JSONheader = { headers: { accept: 'application/json, text/plain, */*'}}
     return await fetch(elementsAPI, JSONheader)
       .then( r => r.json() )
-      .then( r => r.filter((g:elGame)=>g.enabled) ) // only "on")
+      .then( r => r.filter((g:elGame)=> all ? g.enabled : true) ) // only "on")
       .then( r => r.sort((a:elGame,b:elGame)=>a.cost<b.cost?-1:1) )
       .then( r => r.map((g:elGame)=>{ 
         const id = g._id
         const cost = g.cost
         const name = g.name
         const img = g.thumbnail
+        const enabled = g.enabled
         const created = g.createdAt
         const updated = g.updatedAt
         const sub = g.subscriberOnly
@@ -66,7 +67,7 @@ const getters = {
         const xbox = g.description.match(/(^XBOX|.xbox.com)/)?.[1] ? true : false
         const steamID = g.description.match(/steampowered.*app.(\d+)./)?.[1] // steamID for card   
         const steam = (g.description.includes('steampowered') || g.description.includes('STEAM ')) || !xbox
-        return { id,cost,name,img,created,updated,sub,qty,description,xbox,steamID,steam }
+        return { id,cost,name,img,created,updated,sub,qty,description,xbox,steamID,steam, enabled }
       }))
   },
   elementsUser: async (u:string) => fetch( 
