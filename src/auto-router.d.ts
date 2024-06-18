@@ -39,6 +39,7 @@ declare module 'vue-router/auto/routes' {
     '/[...404]': RouteRecordInfo<'/[...404]', '/:404(.*)', { 404: ParamValue<true> }, { 404: ParamValue<false> }>,
     '/bloopPayOverlay': RouteRecordInfo<'/bloopPayOverlay', '/bloopPayOverlay', Record<never, never>, Record<never, never>>,
     '/fishing': RouteRecordInfo<'/fishing', '/fishing', Record<never, never>, Record<never, never>>,
+    '/storeDups': RouteRecordInfo<'/storeDups', '/storeDups', Record<never, never>, Record<never, never>>,
   }
 }
 
