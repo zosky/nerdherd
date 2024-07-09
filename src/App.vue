@@ -30,6 +30,7 @@ setInterval(() => { counter.value++ }, 1000)
     <main>
       <router-view />
     </main>
+    <StaggerTwerk />
   </div>
 </template>
 
