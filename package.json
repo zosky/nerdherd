@@ -4,7 +4,12 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "logUP": "cp public/logs/*csv gh-pages/logs/ ; cd gh-pages ; git add logs/* ; git commit -m \"cache+=$(date +%b%d.%H)\" ; git push",
+    "chatToDB": "node ./scripts/logChat.js",
+    "dbToJsonThisWeek": "node ./scripts/dbToJsonThisWeek.js",
+    "jsonGit": "git add public/json/* ; git commit -m \"cache+=$(date +%b%d.%H)\" ; git push",
+    "sharePerHR": "while true ; do npm run dbToJsonThisWeek ; npm run jsonGit ; sleep 1h ; done"
   },
   "dependencies": {
     "@vueuse/head": "^0.7.9",
@@ -28,6 +33,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.7.0",
     "mdue": "^0.1.4",
+    "mysql2": "^3.11.3",
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8",
