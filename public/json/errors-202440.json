@@ -1,9 +1,9 @@
 [
   {
     "who": "reiokimura",
-    "errors": 3,
+    "errors": 4,
     "timestamp_all": null,
-    "timestamp_bub": "1728349477,1728363102,1728363705",
+    "timestamp_bub": "1728349477,1728363102,1728363705,1728387444",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -27,6 +27,17 @@
     "timestamp_all": null,
     "timestamp_bub": null,
     "timestamp_fish": "1728376722",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "boris_xrenpopadesh",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1728385505",
+    "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
