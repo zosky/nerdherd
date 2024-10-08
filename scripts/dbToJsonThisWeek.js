@@ -8,6 +8,7 @@ const q = {
   redeems: 'SELECT YEARWEEK(`when`) week, UNIX_TIMESTAMP(`when`) time, who, what FROM redeems ' + thisWeek,
   bloop: 'SELECT YEARWEEK(`when`) week, UNIX_TIMESTAMP(`when`) time, who FROM bloop ' + thisWeek,
   bleep: 'SELECT YEARWEEK(`when`) week, UNIX_TIMESTAMP(`when`) time, who FROM bleep ' + thisWeek,
+  errors: 'SELECT *, YEARWEEK(CURRENT_DATE) as week FROM errorLog WHERE errors > 0'
 }
 
 // entries per person reducer
@@ -21,11 +22,16 @@ mysql.createConnection(sqlConfig)
   .then(async conn => { 
     for await (const d of Object.entries(q)){
       const r = await conn.query(d[1])
-      const week = r[0][0].week
-      const rr = d[0] == 'redeems' ? r[0] : perPerson(r[0])
-      const fileName = `public/json/${d[0]}-${week}.json`
-      const fileData = JSON.stringify(rr,null,2)
-      writeFileSync(fileName, fileData)
+      const week = r[0]?.[0]?.week
+      if (!week){ 
+        console.log(`${d[0]} ⛔ noDataYet`)
+      } else {
+        const rr = ['redeems','errors'].includes(d[0]) ? r[0] : perPerson(r[0])
+        const fileName = `public/json/${d[0]}-${week}.json`
+        const fileData = JSON.stringify(rr,null,2)
+        writeFileSync(fileName, fileData)
+        console.log(`${d[0]}-${week} ☁️ saved`)
+      }
     }
     conn.destroy()
   })

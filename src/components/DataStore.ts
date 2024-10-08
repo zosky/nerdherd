@@ -75,6 +75,12 @@ const getters = {
     { headers: { accept: 'application/json, text/plain, */*'}} )
     .then( r => r.json() )
     .then( d => { dataStorage.seUsers[u] = d ; return d }),
+  cache: async (c:string) => {
+    const prodShim = import.meta.env.PROD ? '/nerdherd' : ''
+    return dataStorage?.[c] ?? fetch(`${prodShim}/json/${c}.json?date=${Date.now()}`)
+      .then(r=> r.json() )
+      .then(r=> { dataStorage[c] = r ; return r })
+  }    
 }
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const dataStorage: Record<string,any> = reactive({

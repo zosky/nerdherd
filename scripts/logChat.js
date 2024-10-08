@@ -5,10 +5,19 @@ const mysql = require('mysql2/promise')
 const sqlConfig = require('./dbAuth')
 let sql = null // will hold connection for current run
 const sqlInsert = async (table,values) => {
-  const fields = { redeems: '(`who`,`what`)', bloop: '(`who`)', bleep: '(`who`)' }
-  await sql.query(`INSERT IGNORE INTO ${table} ${fields[table]} VALUES ${values};`)
-  const icons = { redeems:'🎮', bleep: '🙋', bloop: '🏐'}
-  say(`${icons[table]}`)
+  const meta = { 
+    redeems: { fields: '(`who`,`what`)',  icon: '🎮'},
+    bloop: { fields: '(`who`)',  icon: '🙋' },
+    bleep: { fields: '(`who`)', icon: '🏐' },
+    fish: { fields: '(`who`)', icon: '🎣' },
+    bub: { fields: '(`who`)', icon: '🚫' },
+    all: { fields: '(`who`)', icon: '🤮' },
+    arrow: { fields: '(`who`)', icon: '🏹' },
+    battle: { fields: '(`who`)', icon: '⚔️' },
+    hitsquad: { fields: '(`who`)', icon: '🎫' },
+  }
+  await sql.query(`INSERT IGNORE INTO stagger.${table} ${meta[table].fields} VALUES ${values};`)
+  say(`${meta[table].icon}`)
 }
 
 // Create a client with our options
@@ -27,12 +36,11 @@ async function onConnectedHandler (addr, port) {
 function onMessageHandler (target, context, msg, self) {
   const isSTAG = context.username == 'staggerrilla'
   const isSE = context.username == 'streamelements'
-  const isCMD = msg?.match(/!(bleep|bloop)/i)?.[1]?.toLowerCase()
+  const isCMD = msg?.match(/!(bleep|bloop|bub|fish|all|hitsquad|arrow|battle)/i)?.[1]?.toLowerCase()
   const isRedeem = msg?.match(/(\w+) just redeemed (.*) PogChamp/)
   if (isSE && isRedeem?.[1]) { 
     sqlInsert('redeems',`("${isRedeem?.[1]}","${isRedeem?.[2]}")` )
-  } else if (isCMD) { 
+  } else if (isCMD && !isSE) { 
     sqlInsert( isCMD, `("${context.username}")` )
   } // else if "BUBS from stag"
-
 }
