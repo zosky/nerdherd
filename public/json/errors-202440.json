@@ -11,6 +11,17 @@
     "week": 202440
   },
   {
+    "who": "boris_xrenpopadesh",
+    "errors": 3,
+    "timestamp_all": null,
+    "timestamp_bub": "1728385505,1728392268,1728403841",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
     "who": "mva255",
     "errors": 3,
     "timestamp_all": null,
@@ -22,11 +33,11 @@
     "week": 202440
   },
   {
-    "who": "boris_xrenpopadesh",
-    "errors": 2,
+    "who": "leonwubwub",
+    "errors": 1,
     "timestamp_all": null,
-    "timestamp_bub": "1728385505,1728392268",
-    "timestamp_fish": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728376722",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -39,17 +50,6 @@
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": "1728397027",
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
-    "who": "leonwubwub",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728376722",
-    "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
