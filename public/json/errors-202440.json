@@ -11,6 +11,17 @@
     "week": 202440
   },
   {
+    "who": "mva255",
+    "errors": 4,
+    "timestamp_all": null,
+    "timestamp_bub": "1728335725,1728371715,1728427541",
+    "timestamp_fish": "1728335727",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
     "who": "reiokimura",
     "errors": 4,
     "timestamp_all": null,
@@ -22,11 +33,11 @@
     "week": 202440
   },
   {
-    "who": "mva255",
-    "errors": 3,
+    "who": "grikhorior_in_da_games",
+    "errors": 2,
     "timestamp_all": null,
-    "timestamp_bub": "1728335725,1728371715",
-    "timestamp_fish": "1728335727",
+    "timestamp_bub": "1728430084",
+    "timestamp_fish": "1728430095",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
