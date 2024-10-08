@@ -20,7 +20,7 @@ const theD = computed( ()=> dataStore?.[`errors-${thisWeek}`] )
       <template v-for="v,k of u" :key="k">
         <li v-if="v && k!='week'" :class="k=='who'?'who':k=='errors'?'err':'other'">
           <label v-text="k.replace('timestamp_','')"/>
-          <pre v-if="k.includes('timestamp_')" v-text="v.split(',')?.map(vv=>dayjs.unix(vv).format('- ddd Do HH:MM:ss')).join('\n')" />
+          <pre v-if="k.includes('timestamp_')" v-text="v.split(',')?.map(vv=>dayjs.unix(vv).format('- ddd Do HH:mm:ss')).join('\n')" />
           <b v-else v-text="v" />
         </li>
       </template>
