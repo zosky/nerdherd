@@ -1,9 +1,9 @@
 [
   {
-    "who": "reiokimura",
+    "who": "boris_xrenpopadesh",
     "errors": 7,
     "timestamp_all": null,
-    "timestamp_bub": "1728349477,1728363102,1728363705,1728387444,1728436938,1728474173,1728478703",
+    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831,1728486605",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -11,10 +11,10 @@
     "week": 202440
   },
   {
-    "who": "boris_xrenpopadesh",
-    "errors": 6,
+    "who": "reiokimura",
+    "errors": 7,
     "timestamp_all": null,
-    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831",
+    "timestamp_bub": "1728349477,1728363102,1728363705,1728387444,1728436938,1728474173,1728478703",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -33,17 +33,6 @@
     "week": 202440
   },
   {
-    "who": "l_ucif4r",
-    "errors": 3,
-    "timestamp_all": null,
-    "timestamp_bub": "1728409830,1728448968",
-    "timestamp_fish": "1728450482",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
     "who": "grikhorior_in_da_games",
     "errors": 3,
     "timestamp_all": null,
@@ -55,11 +44,22 @@
     "week": 202440
   },
   {
-    "who": "leonwubwub",
+    "who": "l_ucif4r",
+    "errors": 3,
+    "timestamp_all": null,
+    "timestamp_bub": "1728409830,1728448968",
+    "timestamp_fish": "1728450482",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "sasha5889",
     "errors": 1,
     "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728376722",
+    "timestamp_bub": "1728487124",
+    "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -85,6 +85,17 @@
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": "1728462544",
+    "week": 202440
+  },
+  {
+    "who": "leonwubwub",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728376722",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
     "week": 202440
   }
 ]
