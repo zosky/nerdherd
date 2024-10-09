@@ -33,6 +33,17 @@
     "week": 202440
   },
   {
+    "who": "l_ucif4r",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": "1728409830,1728448968",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
     "who": "grikhorior_in_da_games",
     "errors": 2,
     "timestamp_all": null,
@@ -50,17 +61,6 @@
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": "1728397027",
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
-    "who": "l_ucif4r",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1728409830",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
