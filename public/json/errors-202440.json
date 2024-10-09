@@ -45,24 +45,13 @@
   },
   {
     "who": "grikhorior_in_da_games",
-    "errors": 2,
+    "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": "1728430084",
+    "timestamp_bub": "1728430084,1728483280",
     "timestamp_fish": "1728430095",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
-    "who": "hvaki_spark",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1728462544",
     "week": 202440
   },
   {
@@ -85,6 +74,17 @@
     "timestamp_arrow": "1728397027",
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "hvaki_spark",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728462544",
     "week": 202440
   }
 ]
