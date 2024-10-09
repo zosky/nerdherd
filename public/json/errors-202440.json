@@ -1,10 +1,10 @@
 [
   {
-    "who": "mva255",
+    "who": "boris_xrenpopadesh",
     "errors": 5,
     "timestamp_all": null,
-    "timestamp_bub": "1728335725,1728371715,1728427541,1728462020",
-    "timestamp_fish": "1728335727",
+    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087",
+    "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -22,11 +22,11 @@
     "week": 202440
   },
   {
-    "who": "boris_xrenpopadesh",
-    "errors": 4,
+    "who": "mva255",
+    "errors": 5,
     "timestamp_all": null,
-    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769",
-    "timestamp_fish": null,
+    "timestamp_bub": "1728335725,1728371715,1728427541,1728462020",
+    "timestamp_fish": "1728335727",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -55,6 +55,17 @@
     "week": 202440
   },
   {
+    "who": "leonwubwub",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728376722",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
     "who": "leonidovy4",
     "errors": 1,
     "timestamp_all": null,
@@ -74,17 +85,6 @@
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": "1728462544",
-    "week": 202440
-  },
-  {
-    "who": "leonwubwub",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728376722",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
     "week": 202440
   }
 ]
