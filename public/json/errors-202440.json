@@ -1,9 +1,9 @@
 [
   {
     "who": "reiokimura",
-    "errors": 6,
+    "errors": 7,
     "timestamp_all": null,
-    "timestamp_bub": "1728349477,1728363102,1728363705,1728387444,1728436938,1728474173",
+    "timestamp_bub": "1728349477,1728363102,1728363705,1728387444,1728436938,1728474173,1728478703",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -12,9 +12,9 @@
   },
   {
     "who": "boris_xrenpopadesh",
-    "errors": 5,
+    "errors": 6,
     "timestamp_all": null,
-    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087",
+    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -55,17 +55,6 @@
     "week": 202440
   },
   {
-    "who": "leonidovy4",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": "1728397027",
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
     "who": "hvaki_spark",
     "errors": 1,
     "timestamp_all": null,
@@ -83,6 +72,17 @@
     "timestamp_bub": null,
     "timestamp_fish": "1728376722",
     "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "leonidovy4",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": "1728397027",
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
