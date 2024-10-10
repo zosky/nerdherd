@@ -33,17 +33,6 @@
     "week": 202440
   },
   {
-    "who": "l_ucif4r",
-    "errors": 3,
-    "timestamp_all": null,
-    "timestamp_bub": "1728409830,1728448968",
-    "timestamp_fish": "1728450482",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
     "who": "grikhorior_in_da_games",
     "errors": 3,
     "timestamp_all": null,
@@ -55,14 +44,25 @@
     "week": 202440
   },
   {
-    "who": "hvaki_spark",
-    "errors": 1,
+    "who": "l_ucif4r",
+    "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
+    "timestamp_bub": "1728409830,1728448968",
+    "timestamp_fish": "1728450482",
     "timestamp_arrow": null,
     "timestamp_battle": null,
-    "timestamp_hitsquad": "1728462544",
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "seligchan",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": "1728526168",
+    "timestamp_fish": "1728526169",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
     "week": 202440
   },
   {
@@ -107,6 +107,17 @@
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": "1728490945",
+    "week": 202440
+  },
+  {
+    "who": "hvaki_spark",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728462544",
     "week": 202440
   },
   {
