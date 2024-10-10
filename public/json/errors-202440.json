@@ -33,22 +33,22 @@
     "week": 202440
   },
   {
-    "who": "l_ucif4r",
+    "who": "grikhorior_in_da_games",
     "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": "1728409830,1728448968",
-    "timestamp_fish": "1728450482",
+    "timestamp_bub": "1728430084,1728483280",
+    "timestamp_fish": "1728430095",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
   },
   {
-    "who": "grikhorior_in_da_games",
+    "who": "l_ucif4r",
     "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": "1728430084,1728483280",
-    "timestamp_fish": "1728430095",
+    "timestamp_bub": "1728409830,1728448968",
+    "timestamp_fish": "1728450482",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -74,6 +74,17 @@
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": "1728490945",
+    "week": 202440
+  },
+  {
+    "who": "leonidovy4",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": "1728397027",
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
     "week": 202440
   },
   {
@@ -106,17 +117,6 @@
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": "1728496747",
-    "timestamp_hitsquad": null,
-    "week": 202440
-  },
-  {
-    "who": "leonidovy4",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": "1728397027",
-    "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
   }
