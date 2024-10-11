@@ -1,9 +1,9 @@
 [
   {
     "who": "boris_xrenpopadesh",
-    "errors": 15,
+    "errors": 16,
     "timestamp_all": null,
-    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831,1728486605,1728493215,1728496461,1728557644,1728558078,1728574647,1728574655,1728575654,1728588780",
+    "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831,1728486605,1728493215,1728496461,1728557644,1728558078,1728574647,1728574655,1728575654,1728588780,1728642675",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -99,6 +99,17 @@
     "week": 202440
   },
   {
+    "who": "maksin_d",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728640239",
+    "week": 202440
+  },
+  {
     "who": "staggerrilla",
     "errors": 1,
     "timestamp_all": null,
@@ -132,6 +143,28 @@
     "week": 202440
   },
   {
+    "who": "bulgurberbatov",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1728643118",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
+    "who": "leonidovy4",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": "1728397027",
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202440
+  },
+  {
     "who": "sirhunterr",
     "errors": 1,
     "timestamp_all": null,
@@ -143,12 +176,12 @@
     "week": 202440
   },
   {
-    "who": "leonidovy4",
+    "who": "kirlain2003",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": "1728397027",
+    "timestamp_fish": "1728641020",
+    "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
