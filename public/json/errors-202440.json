@@ -196,5 +196,16 @@
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202440
+  },
+  {
+    "who": "johnnyquizz",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1728656785",
+    "timestamp_hitsquad": null,
+    "week": 202440
   }
 ]
