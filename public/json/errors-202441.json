@@ -1,7 +1,7 @@
 [
   {
     "who": "boris_xrenpopadesh",
-    "errors": 25,
+    "errors": 26,
     "timestamp_all": null,
     "timestamp_bub": "1728385505,1728392268,1728403841,1728410769,1728465087,1728479831,1728486605,1728493215,1728496461,1728557644,1728558078,1728574647,1728574655,1728575654,1728588780,1728642675,1728648769,1728661885,1728673937,1728705186,1728728055,1728735965,1728752871,172",
     "timestamp_fish": null,
@@ -88,14 +88,47 @@
     "week": 202441
   },
   {
-    "who": "sirhunterr",
+    "who": "johnnyquizz",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": null,
-    "timestamp_battle": "1728496747",
+    "timestamp_battle": "1728656785",
     "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
+    "who": "leonwubwub",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728376722",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
+    "who": "fscktfs",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728547150",
+    "week": 202441
+  },
+  {
+    "who": "maksin_d",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728640239",
     "week": 202441
   },
   {
@@ -103,28 +136,6 @@
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": "1728574805",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202441
-  },
-  {
-    "who": "agenturarpu",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1728490945",
-    "week": 202441
-  },
-  {
-    "who": "hyper_spectrum",
-    "errors": 1,
-    "timestamp_all": "1728547095",
-    "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -143,58 +154,25 @@
     "week": 202441
   },
   {
-    "who": "maksin_d",
+    "who": "hyper_spectrum",
     "errors": 1,
-    "timestamp_all": null,
+    "timestamp_all": "1728547095",
     "timestamp_bub": null,
     "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1728640239",
-    "week": 202441
-  },
-  {
-    "who": "fscktfs",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1728547150",
-    "week": 202441
-  },
-  {
-    "who": "kirlain2003",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728641020",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202441
   },
   {
-    "who": "leonwubwub",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728376722",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202441
-  },
-  {
-    "who": "johnnyquizz",
+    "who": "agenturarpu",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": null,
-    "timestamp_battle": "1728656785",
-    "timestamp_hitsquad": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728490945",
     "week": 202441
   },
   {
@@ -203,6 +181,28 @@
     "timestamp_all": null,
     "timestamp_bub": "1728643118",
     "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
+    "who": "sirhunterr",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1728496747",
+    "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
+    "who": "kirlain2003",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728641020",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
