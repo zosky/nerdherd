@@ -77,17 +77,6 @@
     "week": 202441
   },
   {
-    "who": "staggerrilla",
-    "errors": 2,
-    "timestamp_all": "1728915237",
-    "timestamp_bub": "1728574805",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202441
-  },
-  {
     "who": "fscktfs",
     "errors": 2,
     "timestamp_all": null,
@@ -143,6 +132,17 @@
     "week": 202441
   },
   {
+    "who": "staggerrilla",
+    "errors": 2,
+    "timestamp_all": "1728915237",
+    "timestamp_bub": "1728574805",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
     "who": "wiseshadow1990",
     "errors": 1,
     "timestamp_all": null,
@@ -172,6 +172,17 @@
     "timestamp_fish": "1728376722",
     "timestamp_arrow": null,
     "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202441
+  },
+  {
+    "who": "johnnyquizz",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1728656785",
     "timestamp_hitsquad": null,
     "week": 202441
   },
@@ -231,28 +242,6 @@
     "week": 202441
   },
   {
-    "who": "gloryandvictys",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": "1728848725",
-    "timestamp_hitsquad": null,
-    "week": 202441
-  },
-  {
-    "who": "johnnyquizz",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": "1728656785",
-    "timestamp_hitsquad": null,
-    "week": 202441
-  },
-  {
     "who": "aswd002",
     "errors": 1,
     "timestamp_all": null,
@@ -272,6 +261,17 @@
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": "1728490945",
+    "week": 202441
+  },
+  {
+    "who": "gloryandvictys",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1728848725",
+    "timestamp_hitsquad": null,
     "week": 202441
   }
 ]
