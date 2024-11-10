@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         stagger-store-platform-drowpdown
 // @namespace    Violentmonkey Scripts
-// @version      1.0
+// @version      1.1
 // @description  add a filter to staggers SE store for easy platform filtering
 // @author       zosky
 // @match        https://streamelements.com/staggerrilla/store
@@ -14,25 +14,25 @@
 // ==/UserScript==
 
 const goTime = () => {
-    // make an array of store types
-    const imgTypes = [
-        {store: 'all', imgUrl: null },
-        {store: 'xbox',  imgUrl: 'https://cdn.streamelements.com/uploads/da3b65db-2194-45f6-bbf3-cc4687962506.jpg' },
-        {store: 'steam', imgUrl: 'https://cdn.streamelements.com/uploads/d450b754-c495-4ffe-a5c4-bdcb24854b42.jpg' }
-    ]
     // add store class to each item
-    for (const i of imgTypes) { 
-        let x = document.querySelectorAll(`.stream-store-list-item:has(img[src="${i.imgUrl}"])`)
-        for (const g of x){ g.classList.add(i.store) }
+    let inventory = document.querySelectorAll(`.stream-store-list-item`)
+    for (const i of inventory) { 
+        const txt = i.querySelector('.clamp-description-text').textContent
+        const type =  txt.match(/^xbox/i) ? 'xbox' 
+            : txt.match(/^steam/i) ? 'steam' 
+                : 'other'
+        i.classList.add(type, 'all')
     }  
     // Create a new dp for platform
     const newDiv = document.createElement('md-input-container')
     const label = document.createElement('label')
     const select = document.createElement('select')
     // add options
-    for (const i of imgTypes){
+    for (const i of ['all','steam','xbox']) {
         const o = document.createElement('option')
-        o.value = i.store; o.textContent = i.store
+        const c = document.querySelectorAll(`.stream-store-list-item.${i}`).length
+        o.textContent = `${i} [${c}]`
+        o.value = i
         select.appendChild(o)
     }
     // prepare the new div
@@ -63,6 +63,7 @@ const goTime = () => {
     styleElement.innerHTML = `
         .xbox { background-color: #0b4d0b7a !important; }
         .xbox button { background: green!important; }
+        .xbox .clamp-description-text:after { background: none !important; }
         select option{ background-color: black!important; }
         select.md-select-value { color: white; border-top: 0; border-left: 0; border-right: 0; border-bottom: 1px solid #444; }
     `
