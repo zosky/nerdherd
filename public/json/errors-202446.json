@@ -99,11 +99,11 @@
     "week": 202446
   },
   {
-    "who": "bnasty710",
+    "who": "l_ucif4r",
     "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": "1730757981,1730759678,1730762255",
-    "timestamp_fish": null,
+    "timestamp_bub": "1728409830,1728448968",
+    "timestamp_fish": "1728450482",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -121,11 +121,55 @@
     "week": 202446
   },
   {
-    "who": "l_ucif4r",
+    "who": "bnasty710",
     "errors": 3,
     "timestamp_all": null,
-    "timestamp_bub": "1728409830,1728448968",
-    "timestamp_fish": "1728450482",
+    "timestamp_bub": "1730757981,1730759678,1730762255",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "kingoftheasylum",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": "1731325954,1731340538",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "crayzeyez",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": "1731814328",
+    "timestamp_fish": "1729300950",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "fscktfs",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1728547150,1728915347",
+    "week": 202446
+  },
+  {
+    "who": "lihairs",
+    "errors": 2,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1729240838,1729242220",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -198,10 +242,54 @@
     "week": 202446
   },
   {
-    "who": "kingoftheasylum",
-    "errors": 2,
+    "who": "gombearnoob",
+    "errors": 1,
     "timestamp_all": null,
-    "timestamp_bub": "1731325954,1731340538",
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1729357299",
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "leonwubwub",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1728376722",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "devojoke",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1730008475",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "ura3535",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1730958210",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "inlivestrans",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1731396318",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -209,36 +297,14 @@
     "week": 202446
   },
   {
-    "who": "crayzeyez",
-    "errors": 2,
-    "timestamp_all": null,
-    "timestamp_bub": "1731814328",
-    "timestamp_fish": "1729300950",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "fscktfs",
-    "errors": 2,
+    "who": "aodbloo",
+    "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
-    "timestamp_hitsquad": "1728547150,1728915347",
-    "week": 202446
-  },
-  {
-    "who": "lihairs",
-    "errors": 2,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1729240838,1729242220",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
+    "timestamp_hitsquad": "1729851081",
     "week": 202446
   },
   {
@@ -249,6 +315,83 @@
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "chimepa1",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1729668882",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "meneldur",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1729242823",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "goodwin1210",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": "1730587504",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "somemarblesfriday",
+    "errors": 1,
+    "timestamp_all": "1731535637",
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "johnnyquizz",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1728656785",
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "hyper_spectrum",
+    "errors": 1,
+    "timestamp_all": "1728547095",
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "kanzas06",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": "1730639537",
     "timestamp_hitsquad": null,
     "week": 202446
   },
@@ -275,17 +418,6 @@
     "week": 202446
   },
   {
-    "who": "dadsbacklog",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1730756404",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
     "who": "sirhunterr",
     "errors": 1,
     "timestamp_all": null,
@@ -297,13 +429,24 @@
     "week": 202446
   },
   {
-    "who": "kanzas06",
+    "who": "staringbunny",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
+    "timestamp_fish": "1729731459",
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "dadsbacklog",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1730756404",
     "timestamp_fish": null,
     "timestamp_arrow": null,
-    "timestamp_battle": "1730639537",
+    "timestamp_battle": null,
     "timestamp_hitsquad": null,
     "week": 202446
   },
@@ -352,11 +495,33 @@
     "week": 202446
   },
   {
-    "who": "staringbunny",
+    "who": "beepsbps",
+    "errors": 1,
+    "timestamp_all": "1729456839",
+    "timestamp_bub": null,
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "t0x1nxz",
+    "errors": 1,
+    "timestamp_all": null,
+    "timestamp_bub": "1729887063",
+    "timestamp_fish": null,
+    "timestamp_arrow": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": null,
+    "week": 202446
+  },
+  {
+    "who": "john1997uyhj",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
-    "timestamp_fish": "1729731459",
+    "timestamp_fish": "1730003179",
     "timestamp_arrow": null,
     "timestamp_battle": null,
     "timestamp_hitsquad": null,
@@ -385,116 +550,6 @@
     "week": 202446
   },
   {
-    "who": "murderreef",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1732296582",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "deadairfarms",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1730756816",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "beepsbps",
-    "errors": 1,
-    "timestamp_all": "1729456839",
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "t0x1nxz",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1729887063",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "kot1001",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1729578611",
-    "week": 202446
-  },
-  {
-    "who": "alpavos",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1731920689",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "gombearnoob",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": "1729357299",
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "john1997uyhj",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1730003179",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "leonwubwub",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1728376722",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "inlivestrans",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1731396318",
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
     "who": "alieksandr98",
     "errors": 1,
     "timestamp_all": null,
@@ -517,32 +572,10 @@
     "week": 202446
   },
   {
-    "who": "ura3535",
+    "who": "murderreef",
     "errors": 1,
     "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1730958210",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "aodbloo",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": null,
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": "1729851081",
-    "week": 202446
-  },
-  {
-    "who": "somemarblesfriday",
-    "errors": 1,
-    "timestamp_all": "1731535637",
-    "timestamp_bub": null,
+    "timestamp_bub": "1732296582",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -550,32 +583,10 @@
     "week": 202446
   },
   {
-    "who": "meneldur",
+    "who": "deadairfarms",
     "errors": 1,
     "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1729242823",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "goodwin1210",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1730587504",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "chimepa1",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": "1729668882",
+    "timestamp_bub": "1730756816",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
@@ -583,32 +594,21 @@
     "week": 202446
   },
   {
-    "who": "devojoke",
-    "errors": 1,
-    "timestamp_all": null,
-    "timestamp_bub": null,
-    "timestamp_fish": "1730008475",
-    "timestamp_arrow": null,
-    "timestamp_battle": null,
-    "timestamp_hitsquad": null,
-    "week": 202446
-  },
-  {
-    "who": "johnnyquizz",
+    "who": "kot1001",
     "errors": 1,
     "timestamp_all": null,
     "timestamp_bub": null,
     "timestamp_fish": null,
     "timestamp_arrow": null,
-    "timestamp_battle": "1728656785",
-    "timestamp_hitsquad": null,
+    "timestamp_battle": null,
+    "timestamp_hitsquad": "1729578611",
     "week": 202446
   },
   {
-    "who": "hyper_spectrum",
+    "who": "alpavos",
     "errors": 1,
-    "timestamp_all": "1728547095",
-    "timestamp_bub": null,
+    "timestamp_all": null,
+    "timestamp_bub": "1731920689",
     "timestamp_fish": null,
     "timestamp_arrow": null,
     "timestamp_battle": null,
