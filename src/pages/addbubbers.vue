@@ -40,8 +40,8 @@ fetch(prodShim('/redeems.txt'))
     })
   )
   
-const uniqueDays = computed(() => [...new Set(data.value.map(item => item.day))])
-const uniqueUsers = computed(() => [...new Set(data.value.map(item => item.user.toLowerCase()))].sort((a,b)=> a > b ? 1 : -1))
+const uniqueDays = computed(() => [...new Set(data.value?.map(item => item?.day))])
+const uniqueUsers = computed(() => [...new Set(data.value?.map(item => item?.user?.toLowerCase()))].sort((a,b)=> a > b ? 1 : -1))
 
 function getBubsForUserAndDay(user, day) {
   const entry = data.value
