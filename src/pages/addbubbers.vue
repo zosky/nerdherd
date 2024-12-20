@@ -132,11 +132,11 @@ const sortedUsers = computed(() => {
         <tr 
           v-for="user in sortedUsers" :key="user" 
           :class="{'hidden': !dataStore?.seUsers?.[user]?.rank }">
-          <td class="text-right bg-blue-950 px-2">{{ user }}</td>
-          <td :title="getGamesForUserAndDay(user,day)?.map(game=>`${game?.day} >> ${game?.game}`).join('\n')" class="text-purple-400 font-bold text-right bg-blue-950" v-text="getGamesForUserAndDay(user).length ? getGamesForUserAndDay(user).length + '🕹️' : ''" />
-          <td class="text-right bg-blue-950 px-2 bg-opacity-90" v-text="dataStore?.seUsers?.[user]?.rank ? dataStore?.seUsers?.[user]?.rank + ' ⚔️': ''" />
-          <td class="text-right bg-blue-950 px-2 bg-opacity-90" v-text="dataStore?.seUsers?.[user]?.points ? Math.round(dataStore?.seUsers?.[user]?.points/1000) + 'k🪙' : ''" />
-          <td class="text-right" v-text="Math.round(getBubsForUserAndDay(user)/1000) + 'k🪙' " />
+          <td :class="{ thisRow: sortKey=='user' }" class="l text-right">{{ user }}</td>
+          <td :class="{ thisRow: sortKey=='games', l:true }" :title="getGamesForUserAndDay(user,day)?.map(game=>`${game?.day} >> ${game?.game}`).join('\n')" class="text-purple-400 font-bold text-right" v-text="getGamesForUserAndDay(user).length ? getGamesForUserAndDay(user).length + '🕹️' : ''" />
+          <td :class="{ thisRow: sortKey=='rank' }" class="l text-right" v-text="dataStore?.seUsers?.[user]?.rank ? dataStore?.seUsers?.[user]?.rank + ' ⚔️': ''" />
+          <td :class="{ thisRow: sortKey=='points' }" class="text-right" v-text="dataStore?.seUsers?.[user]?.points ? Math.round(dataStore?.seUsers?.[user]?.points/1000) + 'k🪙' : ''" />
+          <td :class="{ thisRow: sortKey=='thisWeek' }"  class="text-right" v-text="Math.round(getBubsForUserAndDay(user)/1000) + 'k🪙' " />
           <td v-for="day in uniqueDays" :key="day" class="text-right border-r px-2 border-r-green-900">
             <div class="flex justify-between gap-2 button select-none">
               <div :title="getGamesForUserAndDay(user,day)?.map(game=>`${game.day} >> ${game.game}`).join('\n')" class="text-purple-400 font-bold">{{ getGamesForUserAndDay(user,day).length ? getGamesForUserAndDay(user,day).length + '🕹️' : '' }}</div>
@@ -159,6 +159,9 @@ const sortedUsers = computed(() => {
     border-b border-b-blue-900 
     hover:bg-purple-900 hover:text-purple-100 
   }
+  td.l { @apply bg-blue-900 bg-opacity-30 }
+  td.thisRow, td.l.thisRow { @apply bg-blue-900 bg-opacity-90 px-2 }
+  td:not(.thisRow) { @apply text-right px-2 }
  .filter { @apply text-purple-500 bg-blue-900 bg-opacity-90 px-2 }
  .filter.sorted::after {  content: '↓'; }
  .filter:not(.sorted)::after {  content: '↑'; }
