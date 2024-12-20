@@ -4,10 +4,10 @@ import advancedFormat from 'dayjs/plugin/advancedFormat'
 dayjs.extend(advancedFormat)
 const { elementsUser } = inject('$getters')
 const dataStore = inject('$dataStore')
-
 const data = ref([])
 const redeems = ref([])
-fetch('/addbubs.txt')
+const prodShim = x => (import.meta.env.PROD ? '/nerdherd' : '')+x
+fetch(prodShim('addbubs.txt'))
   .then(response => response.text())
   .then(r => data.value = r
     .split('\n')
@@ -27,7 +27,7 @@ fetch('/addbubs.txt')
     }
   })
 
-fetch('/redeems.txt')
+fetch(prodShim('/redeems.txt'))
   .then(response => response.text())
   .then(r => redeems.value = r
     .split('\n')
